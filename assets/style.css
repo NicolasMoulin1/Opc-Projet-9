@@ -357,4 +357,9 @@ input[type="submit"] {
     width: 80%;
     object-fit: cover;
   }
+  footer {
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }

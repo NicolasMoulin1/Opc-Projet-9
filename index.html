@@ -6,15 +6,82 @@
 	<meta name="copyright" content="© Nina Carducci" />
 	<meta name="description" content="Site web de Nina Carducci, photographe capturant des moment uniques avec passion et créativité." />
 
+	<!-- URL de votre image -->
+	<meta property="og:url" content="https://nicolasmoulin1.github.io/Opc-Projet-9/"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
 
+	<!-- Meta donnés pour le référencement facebook -->
+	<meta 
+	property="og:title" 
+	content="Nina Carducci - Photographe - Bordeaux"
+	/>
+	<meta 
+	property="og:description" 
+	content="Site web de Nina Carducci, photographe capturant des moment uniques avec passion et créativité."
+	/>
+	<meta
+	property="og:image"
+	content="https://NicolasMoulin1.github.io/Opc-proejet-9/assets/images/nina.webp"
+	/>
+
+	<!-- Meta donnés pour le référencement Twitter -->
+	<meta 
+	property="twitter:title" 
+	content="Nina Carducci - Photographe - Bordeaux"
+	/>
+	<meta 
+	property="twitter:description" 
+	content="Site web de Nina Carducci, photographe capturant des moment uniques avec passion et créativité."
+	/>
+	<meta
+	property="twitter:image"
+	content="https://NicolasMoulin1.github.io/Opc-proejet-9/assets/images/nina.webp"
+	/>
 	
 	<!-- URL de votre image -->
 	<title>Nina Carducci - Photographe</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.minify.css">
+	<link rel="stylesheet" href="./assets/minify.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com" defer>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+
+	<script type="application/ld+json"> 
+		{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Nina Carducci",
+		"image": "./assets/images/nina.webp",
+		"url": "https://ninacarducci.github.io/",
+		"priceRange": "50€ - 400€", 
+		"address": {
+			"@type": "PostalAdress",
+			"streetAdress": "68 avenue Alsace-Lorraine",
+			"adressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"adressCountry": "FR"
+		},
+		"telephone": "+330556677889",
+		"openingHoursSpecification": [
+		{
+			"@type": "openingHoursSpecification",
+			"dayOfWeek": [
+			  "Monday",
+			  "Tuesday",
+			  "Wednesday",
+			  "Thursday",
+			  "Friday"
+			],
+			"opens": "10:00",
+			"close": "19:00"
+		}
+	],
+	"sameAs": ["https://www.instagram.com/ninacarducci.photo"]
+}
+		
+			
+	</script>
 </head>
 <body>
 	<div class="top-header">
@@ -48,13 +115,22 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Homme qui traverse un passage piéton">
+				<picture>
+					<source srcset="./assets/images/slider/ryoji-iwataMobile.webp" media="(max-width: 768px)" />
+					<img src="./assets/images/slider/ryoji-iwatatest.webp" class="d-block w-100" alt="Homme qui traverse un passage piéton">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Une foule qui danse">
+				<picture>
+					<source srcset="./assets/images/slider/nicholas-greenMobile.webp" media="(max-width: 768px)" />
+					<img src="./assets/images/slider/nicholas-greentest.webp" class="d-block w-100" alt="Une foule qui danse">
+				</picture>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/mariageDanse.webp" class="d-block w-100" alt="Un couple qui danse">
+				<picture>
+					<source srcset="./assets/images/slider/mariageDanseMobile.webp" media="(max-width: 768px)" />
+					<img src="./assets/images/slider/mariageDansetest.webp" class="d-block w-100" alt="Un couple qui danse">
+				</picture>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -69,7 +145,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="ninacarducci">
+		<img src="./assets/images/ninatest.webp" alt="ninacarducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -84,15 +160,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="Concert Aaron-paul"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="Entrepreneur Ali-morshedlou"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="Entrepreneur Jason-goodman"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="Main mariage Hannah-busing"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="Portrait Ade-tunji"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/mariagePalm.webp" alt="Mariage sous un palmier"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van.webp" alt="Portrait Nino-van"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="Concert Austin-neill"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos.webp" alt="Entrepreneuse Meteus-campos"/>
+			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/aaron-paultest.webp" alt="Concert Aaron-paul"/>
+			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neilltest.webp" alt="Concert Austin-neill"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/ali-morshedloutest.webp" alt="Entrepreneur Ali-morshedlou"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/jason-goodmantest.webp" alt="Entrepreneur Jason-goodman"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/mateus-campostest.webp" alt="Entrepreneuse Mateus-campos"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/hannah-busingtest.webp" alt="Main mariage Hannah-busing"/>
+			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/mariagePalmtest.webp" alt="Mariage sous un palmier"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/ade-tunjitest.webp" alt="Portrait Ade-tunji"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/nino-vantest.webp" alt="Portrait Nino-van"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -157,27 +233,34 @@
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom" required placeholder="Entrez votre nom">
 				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required placeholder="exemple@domaine.com">
+				<input type="email" name="email" id="email" required placeholder="exemple@domaine.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10" required placeholder="Votre message ici"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.webp" width="548" height="548" alt="appareil photo">
+			<img src="./assets/images/cameratest.webp" width="548" height="548" alt="appareil photo">
 		</div>
 	</div>
 </div>
 <footer>
-
+	<div>
+        <address>
+          <span>68 avenue Alsace-Lorraine</span>, <span>Bordeaux</span>,
+          <span>33200</span>
+        </address>
+        <p>Téléphone : <a href="tel:0556677889">05 56 67 78 89</a></p>
+        <p>Horaires d'ouverture : Lundi - Vendredi de 10h à 19h.</p>
+      </div>
 </footer>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.minify.js"></script>
     <script 
         src="https://code.jquery.com/jquery-3.4.1.min.js" 
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
         crossorigin="anonymous">
     </script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script src="./assets/minifyMaugallery.js" defer></script>
+    <script src="./assets/scripts.js" defer></script>
 </body>
 </html>
