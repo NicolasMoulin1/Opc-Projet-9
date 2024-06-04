@@ -357,9 +357,10 @@ input[type="submit"] {
     width: 80%;
     object-fit: cover;
   }
-  footer {
-    p {
-      font-size: 0.8rem;
-    }
-  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:#d8d3a8;  
 }
