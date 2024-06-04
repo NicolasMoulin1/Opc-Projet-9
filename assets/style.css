@@ -362,5 +362,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:#d8d3a8;  
+  background:white;
+  color: black;
+  padding-top: 20px;
 }
